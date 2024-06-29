@@ -1,0 +1,37 @@
+/* components/TextSlider.module.css */
+
+.slider {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative; /* To center the slider content */
+  margin-top: 100px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 100px;
+  width: auto;
+}
+
+.slideTrack {
+  display: flex;
+  animation: scroll 30s linear infinite; /* Adjust duration for speed */
+}
+
+.slide {
+  display: inline-block;
+  padding: 0 20px;
+  font-size: 3rem;
+  color: #4a5568; /* Adjust color as needed */
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%); /* Adjust percentage to half the length of all slides */
+  }
+}
